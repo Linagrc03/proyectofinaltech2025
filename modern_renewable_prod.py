@@ -6,7 +6,7 @@ import plotly.express as px
 #carga de datos
 df = pd.read_csv("modern_renewable_prod.csv", sep=';')
 #imprimir información de la base de datos original
-print(len(df))
+df.info()
 
 #filtrar los paises suramericanos
 paises_suramericanos = [
