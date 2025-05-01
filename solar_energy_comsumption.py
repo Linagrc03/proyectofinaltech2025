@@ -4,6 +4,8 @@ import plotly.express as px
 
 # Cargar los datos
 df = pd.read_csv("solar_energy_comsumption.csv", sep=';')
+#imprimir información de la base de datos original
+print(len(df))
 
 # Filtrar por países suramericanos
 paises_suramericanos = [
