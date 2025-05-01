@@ -5,8 +5,7 @@ import plotly.express as px
 # Cargar los datos
 df = pd.read_csv("hydropower_consumption.csv", sep=';')
 #imprimir información de la base de datos original
-print(len(df))
-
+df.info()
 # Filtrar por países suramericanos
 paises_suramericanos = [
      'Argentina', 'Bolivia', 'Brazil', 'Chile', 'Colombia',
